@@ -7,7 +7,7 @@ public class BankAccount {
 	
 	protected double balance;
 	protected boolean isFrozen;
-	List<Transaction> transactionHistory;
+	protected List<Transaction> transactionHistory;
 	
 	public BankAccount() {
 		this.balance = 0;
