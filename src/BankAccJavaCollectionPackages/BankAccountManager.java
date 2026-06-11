@@ -5,8 +5,8 @@ import java.util.Map;
 
 public class BankAccountManager implements Bank {
 	
-	Map<Integer, BankAccount> accounts;
-	int id;
+	protected Map<Integer, BankAccount> accounts;
+	protected int id;
 	
 	public BankAccountManager() {
 		super();

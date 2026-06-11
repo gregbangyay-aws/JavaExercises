@@ -3,9 +3,9 @@ package BankAccJavaCollectionPackages;
 import java.time.LocalDateTime;
 
 public class Transaction {
-	String type;
-	double amount;
-	LocalDateTime time_stamp;
+	protected String type;
+	protected double amount;
+	protected LocalDateTime time_stamp;
 	
 	public Transaction(String type, double amount) {
 		this.type = type;
