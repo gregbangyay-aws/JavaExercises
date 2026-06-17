@@ -1,4 +1,4 @@
-package BankAccountWithOOP;
+package bankaccountwithoop;
 
 public class BankAccount {
 	protected double balance;

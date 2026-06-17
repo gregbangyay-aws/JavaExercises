@@ -1,4 +1,4 @@
-package BankAccountWithOOP;
+package bankaccountwithoop;
 
 public class SavingsAccount extends BankAccount{
 	protected String ownerName;
