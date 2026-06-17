@@ -26,17 +26,34 @@ public class BankAccountManager implements Bank {
         this.id = 0;
     }
 
+    /**
+     * Adds a bank account to the registry, maps it to the current system ID,
+     * and increments the ID counter for the next entry.
+     *
+     * @param account the {@link BankAccount} instance to be registered
+     * @return a success message containing the assigned account ID
+     */
     @Override
-    public String addAccount(BankAccount account) {
+    public String addAccount(final BankAccount account) {
         accounts.put(id, account);
         return "Account added successfully with ID: " + id++;
     }
 
+    /**
+     * Retrieves a registered bank account from the map using its unique ID.
+     *
+     * @param id the unique identifier of the account to look up
+     * @return the associated {@link BankAccount}, or {@code null} if the ID is
+     *         not found
+     */
     @Override
-    public BankAccount getAccount(int id) {
+    public BankAccount getAccount(final int id) {
         return accounts.get(id);
     }
 
+    /**
+     * Lists all accounts.
+     */
     public void listAccounts() {
         for (Map.Entry<Integer, BankAccount> entry : accounts.entrySet()) {
             Integer id = entry.getKey();
