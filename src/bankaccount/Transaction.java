@@ -10,7 +10,7 @@ public class Transaction {
     /**
      * Amount of the current transaction.
      */
-    private double amount;
+    protected double amount;
     /**
      * Timestamp of the transaction.
      */
