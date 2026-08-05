@@ -17,7 +17,6 @@ public class Test {
             e.printStackTrace();
         }
 
-        // System.out.println(acc1.deposit(-500));
         System.out.println();
 
         System.out.println(acc1.getTransactionHistory());
